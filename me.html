@@ -17,8 +17,9 @@
 			<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
 		</head>
-<!----->
+<!---Menu -->
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">About</a>
@@ -40,7 +41,8 @@
 						<h1 class="display-1">CARLOS SANCHEZ</h1>
 					</div>
 					<ul class="informationlist">
-						<li><i class="fa fa-laptop fa-fw"></i>Front-end Developer</li>
+						<li><i class="fa fa-laptop fa-fw"></i>FreeCodeCamp Student</li>
+
 
 					</ul>
 				</div>
@@ -53,7 +55,7 @@
 			<div  class="summary">
 					<div class="row">
 						<div style="padding:0"class="col-md-7 ">
-							<img class="img-responsive" src="me.jpg" style="width:100%">
+							<img class="img-responsive" src="me.png" style="width:100%">
 						</div>
 						<div style="padding:30px"class="col-md-5  backgroundcolorchange">
 							<div class="header">
@@ -85,35 +87,53 @@
 				</div>
 			</div>
 <!--Personal work and FreeCodeCamps-->
-			<div  class="summary">
-					<div class="row">a
-						<div  class="col-md-6 ">
-
-								<h3><i class="fa fa-fire fa-2x">FreeCodeCamp Works</i></h3>
-								<img class="img-responsive" src="eagleelectric.jpg" style="width:100%">
-
-							</div>
-
-						<div class="col-md-6 ">
-							<h3><i class="fa fa-file-code-o fa-2x">Personal Works</i></h3>
-						</div>
-					</div>
-				</div>
-
-
-
-
-				<div  class="summary">
+			<div  class="Portfolio">
+				<h3 class="ProjectsTitle"><i class="fa fa-fire ">FreeCodeCamp Works</i></h3>
+				<div class="container">
 					<div class="row">
-						<div class="col-md-6 ">
-
-							<img class="img-responsive" src="eagleelectric.jpg" style="width:100%">
-							</div>
-
-							<div style="padding:0"class="col-md-6 ">
-							<img class="img-responsive" src="eagleelectric.jpg" style="width:100%">
+						<div  class="col-md-4 "> <!--Projects-->
+									<div class="card" style="width:300px">
+									  <img class="card-img-top" src="eagleelectric.jpg" alt="Card image" style="width:100%">
+									  <div class="card-body">
+									    <h4 class="card-title">John Doe</h4>
+									    <p class="card-text">Some example text some example text.</p>
+									    <a href="#" class="btn btn-primary">See Profile</a>
+									  </div>
+									</div>
 						</div>
-					</div>
+
+						<div class="col-md-4">
+
+
+									<div class="card" style="width:300px">
+									  <img class="card-img-top"src="eagleelectric.jpg" alt="Card image" style="width:100%">
+									  <div class="card-body">
+									    <h4 class="card-title">John Doe</h4>
+									    <p class="card-text">Some example text some example text.
+												John Doe is an architect and engineer</p>
+									    <a href="#" class="btn btn-primary">See Profile</a>
+									  </div>
+									</div>
+
+
+
+						</div>
+						<div class="col-md-4 ">
+									<div class="card" style="width:300px">
+										<img class="card-img-top" src="eagleelectric.jpg" alt="Card image" style="width:100%">
+										<div class="card-body">
+											<h4 class="card-title">John Doe</h4>
+											<p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+											<a href="#" class="btn btn-primary">See Profile</a>
+										</div>
+									</div>
+
+
+
+
+												</div>
+					</div><!----Endofrow---->
+				</div>
 			</div>
 
 			<!---Header Section (Contact Me)-->
@@ -124,23 +144,15 @@
 			</div>
 
 						<div class="ContactMe">
-							<form action="/my-handling-form-page" method="post">
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name">
-    </div>
-    <div>
-        <label for="mail">E-mail:</label>
-        <input type="email" id="mail" name="user_mail">
-    </div>
-    <div>
-        <label for="msg">Message:</label>
-        <textarea id="msg" name="user_message"></textarea>
-    </div>
-</form>
 
+							<form class="form-inline">
+							  <label for="email">Email address:</label>
+							  <input type="email" class="form-control" id="email">
+							  <label for="pwd">Password:</label>
+							  <input type="password" class="form-control" id="pwd">
 
-
+							  <button type="submit" class="btn btn-primary">Submit</button>
+							</form>
 
 
 
