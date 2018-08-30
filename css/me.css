@@ -7,8 +7,8 @@ Designed by Carlos Sanchez*/
 #DBE2EF gray
 #3F72AF sky
 #222831 black (Main color)
-
-#00ADB5 letter color*/
+#00ADB5 letter color
+*/
 
 #wholepage{
 	background-color:#222831 !important;
@@ -191,25 +191,17 @@ a:hover{
 /*Form (Contact me*/
 
 
-
-
-
 form {
   /* Just to center the form on the page */
   margin: 0 auto;
-
   /* To see the outline of the form */
   padding: 2em;
-
-
 }
-
 
 .background_footer{
 	background-color: #222831 ;
 	padding: 120px;
 }
-
 
 
 .btn{
