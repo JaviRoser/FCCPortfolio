@@ -2,36 +2,46 @@
     July 4,2017
 Designed by Carlos Sanchez*/
 
-/*Palete
-#F9F7F7 almost white (backgrouncolor)
-#DBE2EF gray
-#3F72AF sky
-#222831 black (Main color)
-#00ADB5 letter color
-*/
 
-#wholepage {
-    background-color: #222831 !important;
-    color: #EEEEEE;
+:root {
+    --main-color: #1e2022;
+    --secondary-color: #52616b;
+    --ternary-color: #c9d6df;
+    --four-color: #f0f5f9;
+}
+
+h1 {
+    font-weight: 600;
+    text-align: center;
+}
+
+
+main {
+    background-color: var(--main-color);
+    color: var(--four-color);
     transition: margin-left .5s;
     overflow-x: hidden;
     margin: 0;
     width: 100%;
     position: relative;
-    /*font-family: 'Catamaran', sans-serif;*/
     font-weight: 400;
 }
 
-body{
-  font-family: 'Open Sans', sans-serif;
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
-
 /*Menu*/
-.menu {
+#menu {
     text-align: center;
-    background-color: #222831;
-    color: #EEEEEE;
+    color: var(--four-color);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.img-responsive {
+    width: 100%;
+
 }
 
 /* The side navigation menu */
@@ -84,8 +94,9 @@ body{
 
 /*Section Titles (Manipulates ContactMe and PORTFOLIO)*/
 .display-1 {
-    font-size: 3rem !important;
-    font-weight: 400;
+    font-size: 5em;
+    font-weight: 600;
+    letter-spacing: -2px;
 }
 
 /*button to the top*/
@@ -102,7 +113,6 @@ body{
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
-    `
 }
 
 .summary,
@@ -111,30 +121,49 @@ body{
 }
 
 .jumbotron {
-    background-color: #222831;
-    /* color: #00ADB5; */
+
+    color: var(--main-color);
+    padding: 15em 0 15em 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-/*Name and resume title*/
-h1 {
-    font-family: 'Oswald', sans-serif;
+/*Welcome Section About myself*/
+
+#welcome-section h2 {
+    color: var(--secondary-color);
+    font-weight: 900;
+    padding: 2em;
+    letter-spacing: 1em;
+}
+
+.about_Me {
+    line-height: 1.5em;
+    padding: 4em;
+    font-size: 1.5em;
+}
+
+.about_Me h2 {
     font-weight: 600;
-    text-align: center;
 }
 
-h2 {
-    color: #F9F7F7;
-}
-
-
-.summary p {
-    text-align: justify;
-}
 
 /*    PORTFOLIO SECTION     */
 
 .Portfolio {
     padding-bottom: 8em !important;
+
+}
+
+#half_header {
+    color: var(--secondary-color);
+}
+
+.card {
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, .1);
+}
+
+.Portfolio .container {
+    padding: 5em 0 2em 0;
 }
 
 .ProjectsTitle {
@@ -143,40 +172,24 @@ h2 {
     padding: 2em;
 }
 
+.Portfolio,
+.card-text {
+    color: var(--main-color);
+    width: 100%;
+    padding: 0.9em;
 
-
-/*      cards stylying        */
-
-
-
-.card {
-    border: #1f252d !important;
 }
 
-.col-md-4 {
-    padding: 2em 1em 2em 1em;
-}
-
-
-
-.card-body {
-    padding: 1em;
-    /* color: #7a7e83; */
-    font-weight: 500 !important;
-    background-color: #262d38;
-}
-
-.card-title {
-    font-weight: 600 !important;
+.Portfolio .card-title {
     text-align: center;
-    padding: 2em 0 0.5em 0;
-    color: #F9F7F7;
-
+    padding: 1em;
+    font-weight: 600;
+    letter-spacing: -2px;
+    font-size: 1.5em;
 }
 
 .projectLink {
     text-align: center;
-
 }
 
 a {
@@ -186,8 +199,6 @@ a {
 
 a:hover {
     color: #00ADB5;
-
-
 }
 
 /*Form (Contact me*/
@@ -201,8 +212,8 @@ form {
 }
 
 .background_footer {
-    background-color: #222831;
-    padding: 120px;
+
+    padding: 100px;
 }
 
 
@@ -210,15 +221,14 @@ form {
     border: 1px solid transparent;
     border-radius: 7px;
     border-color: #00ADB5 !important;
-    background-color: #00ADB5 !important;
-    color: white;
+    background-color: var(--four-color);
+    color: var(--main-color);
     font-weight: 700;
 }
 
 .btn:hover {
     border-color: #00ADB5 !important;
-    background-color: white !important;
-
+    background-color: var(--primary-color);
     font-weight: 700;
     color: #00ADB5 !important;
 
@@ -226,19 +236,51 @@ form {
 
 /*Footer*/
 
-contactme i {
-    color: white;
+.contactme {
+    color: var(--main-color);
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: -2px;
+    text-align: center;
+
+}
+
+.contactme span {
+    font-family: 'Marck Script', cursive;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
+
     .sidenav {
         padding-top: 15px;
     }
 
     .sidenav a {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about_Me {
+        font-size: 1.2em;
+    }
+
+    #welcome-section h2 {
+        font-weight: 500;
+        letter-spacing: 0;
+        padding: 0 0.5em  0 0.5em ;
+    }
+
+
+    .display-1 {
+        font-size: 3em;
+        font-weight: 900;
+    }
+
+    .jumbotron {
+        padding: 10em 0 10em 0;
     }
 }
