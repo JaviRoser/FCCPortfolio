@@ -1,11 +1,10 @@
 <!DOCTYPE html>
+<html lang="en">
 <!-- My personal Page (Main Page)
 
 FreeCodeCamp Project
     July 7,2017
     Designed by Carlos Sanchez-->
-<html>
-<title>Free Code Camp My Website</title>
 
 <body class="mypersonalwebsite">
 
@@ -20,19 +19,29 @@ FreeCodeCamp Project
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Marck+Script" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <title>Free Code Camp My Website</title>
     </head>
-    <main id="wholepage">
+    <main id="main_content" role="main">
         <!---Menu -->
-        <div id="mySidenav" class="sidenav">
+        <!-- <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#">About</a>
             <a href="#">Portfolio</a>
             <a href="#">Contact Me</a>
-        </div>
+        </div> -->
         <!-- Use any element to open the sidenav -->
-        <div id="menu">
-            <span onclick="openNav()">&#9776</span>
-        </div>
+        <!--   <div id="menu">
+            <span tabIndex="0" onclick="openNav()">&#9776</span>
+        </div> -->
+        <header id="header">
+            <nav id="navbar">
+                <ul class="topnav" role="navigation" onscroll="navbarEffect">
+                    <li><a class="nav-link" href="#welcome-section">About</a></li>
+                    <li><a class="nav-link" href="#Portfolio_Title">Projects</a></li>
+                    <li><a class="nav-link" href="#contact_me_section">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
         <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
         <!--Contact information-->
         <div id="welcome-section" class="jumbotron">
@@ -66,81 +75,50 @@ FreeCodeCamp Project
             </div>
         </div>
         <!---Header Section (Portfolio)--->
-        <div id="Portfolio" class="jumbotron ">
+        <div id="Portfolio_Title" class="jumbotron ">
             <div class="header ">
                 <h1 class="display-1"><span id="half_header">Port</span>folio</h1>
             </div>
         </div>
         <!--Personal work and FreeCodeCamps-->
         <div class="Portfolio">
-            <div class="container">
+            <div id="projects" class="container">
                 <div class="row">
                     <div class="col-md-4 ">
                         <!--Projects-->
-                        <div class="card">
-                            <img class="card-img-top" src="images/eagleelectric.jpg" alt="Card image" style="height:175px;width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    Business Website</h4>
-                                <p class="card-text">This web site was build and launch to create a web presence for a electrical company.</p>
-                                <p class="projectLink"> <a href=#>View Project > </a></p>
+                        <div class="project-tile">
+                            <div class="card">
+                                <img class="card-img-top" src="images/eagleelectric.jpg" alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Business Website</h4>
+                                    <p class="card-text">This web site was build and launch to create a web presence for a electrical company.</p>
+                                    <p class="projectLink"> <a id="profile-link" href="http://eagleelectric.us/" target="_blank"> View Project </a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card">
-                            <img class="card-img-top" src="images/tributepage.jpg" alt="Card image" style="height:175px ;width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title">Tribute Page FreeCodeCamp</h4>
-                                <p class="card-text">FreeCodeCamp Project created to practice basic CSS &amp HTML syntax.</p>
-                                <p class="projectLink"> <a href=#>View Project > </a></p>
+                        <div class="project-tile">
+                            <div class="card">
+                                <img class="card-img-top" src="images/tributepage.jpg" alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Tribute Page FreeCodeCamp</h4>
+                                    <p class="card-text">FreeCodeCamp Project created to practice basic CSS &amp HTML syntax.</p>
+                                    <p class="projectLink"> <a id="profile-link" href="https://javiroser.github.io/FCCTributePage/" target="_blank">View Project > </a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 ">
-                        <div class="card">
-                            <img class="card-img-top" src="images/PersonalPortfolio.jpg" alt="Card image" style=" height:175px ;width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title">Personal Resume Website</h4>
-                                <p class="card-text">Personal website using boostrap, HTML, CSS &amp JavaScript.</p>
-                                <p class="projectLink"> <a href=#>View Project > </a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!----Endofrow---->
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 ">
-                        <!--Projects-->
-                        <div class="card">
-                            <img class="card-img-top" src="images/eagleelectric.jpg" alt="Card image" style="height:175px;width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    Business Website</h4>
-                                <p class="card-text">This web site was build and launch to create a web presence for a electrical company.</p>
-                                <p class="projectLink"> <a href=#>View Project > </a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img class="card-img-top" src="images/tributepage.jpg" alt="Card image" style="height:175px ;width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title">Tribute Page FreeCodeCamp</h4>
-                                <p class="card-text">FreeCodeCamp Project created to practice basic CSS &amp HTML syntax.</p>
-                                <p class="projectLink"> <a href=#>View Project > </a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ">
-                        <div class="card">
-                            <img class="card-img-top" src="images/PersonalPortfolio.jpg" alt="Card image" style=" height:175px ;width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title">Personal Resume Website</h4>
-                                <p class="card-text">Personal website using boostrap, HTML, CSS &amp JavaScript.</p>
-                                <p class="projectLink"> <a href=#>View Project > </a></p>
+                        <div class="project-tile">
+                            <div class="card">
+                                <img class="card-img-top" src="images/PersonalPortfolio.jpg" alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Personal Resume Website</h4>
+                                    <p class="card-text">Personal website using boostrap, HTML, CSS &amp JavaScript.</p>
+                                    <p class="projectLink"> <a id="profile-link" href="https://javiroser.github.io/Me/" target="_blank">View Project > </a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -149,7 +127,7 @@ FreeCodeCamp Project
             </div>
         </div>
         <!---Header Section (Contact Me)-->
-        <div class="jumbotron ">
+        <div id="contact_me_section" class="jumbotron ">
             <div class="header ">
                 <h1 class="display-1">Contact<span id="half_header"> Me</span></h1>
             </div>
@@ -182,19 +160,8 @@ FreeCodeCamp Project
         </div>
     </footer>
 </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <script>
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("wholepage").style.marginLeft = "250px";
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("wholepage").style.marginLeft = "0";
-}
-
 //Typewriter Effect
 
 var i = 0;
