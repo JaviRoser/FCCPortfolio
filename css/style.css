@@ -76,11 +76,19 @@ body {
 .topnav a {
     text-decoration: none;
     color: var(--four-color);
+    /* text-align: center; */
 }
 
 .topnav a:hover {
-    color: var(--ternary-color);
+    color: var(--main-color);
+    background-color: var(--four-color)
 }
+
+
+.topnav .icon {
+    display: none;
+}
+
 
 /*Section Titles (Manipulates ContactMe and PORTFOLIO)*/
 .display-1 {
@@ -214,7 +222,7 @@ form {
     font-weight: 700;
     text-align: center;
     color: var(--four-color);
-     font-weight: 700;
+    font-weight: 700;
     background-color: transparent;
 }
 
@@ -258,18 +266,28 @@ form {
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
-}
 
 @media screen and (max-width: 600px) {
+
+    .topnav {
+        overflow: hidden;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #navbar {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    #navbar{
+
+    }
+
     .about_Me {
         font-size: 1.2em;
     }
